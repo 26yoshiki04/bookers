@@ -1,0 +1,16 @@
+<div class="show">
+  <h1>詳細ページ</h1>
+    <section class="blog-box">
+      <p class="blog-box-heading" id="show-span">
+        <span class="red">Title:</span> <%= @blog.title %>
+      </p>
+      <p class="single-text">
+        <span class="blue">Body:</span> <%= @blog.body %>
+      </p>
+
+      <div class="link">
+        <%= link_to "編集", edit_blog_path(@blog), class: "left" %>
+        <%= link_to "削除", blog_path, method: :delete %>
+      </div>
+    </section>
+</div>

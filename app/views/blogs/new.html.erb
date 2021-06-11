@@ -1,0 +1,36 @@
+<div class="new">
+  <h2 class="new-title">Books</h2>
+  <div class="new-contents">
+    <table border="1" align="center">
+      <thead>
+        <tr>
+          <th class="red" width="100" height="30">title</th>
+          <th class="blue" width="300" height="30">body</th>
+        </tr>
+      </thead>
+
+      <tbody>
+       <% @blogs.each do |blog| %>
+        <tr>
+          <td class="contens-title" width="100" height="30"><%= link_to blog.title, blog_path(blog) %></td>
+          <td class="contents-body" width="300" height="30"><%= link_to blog.body, blog_path(blog) %></td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
+
+  <%= form_with model:@blog, local:true do |f| %>
+  <div class="new-books">
+  <br>
+    <h3 class="new-books-title">New books</h3>
+    <p class="red">Title</p>
+    <%= f.text_field :title %>
+
+    <p class="blue">Body</p>
+    <%= f.text_area :body, :size => "40x10", class: "new-body" %>
+
+    <%= f.submit 'Create Book', class: "btn" %>
+  </div>
+  <% end %>
+</div>

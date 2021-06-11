@@ -1,0 +1,93 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000000;
+}
+
+.index-title{
+  font-size: 1.7rem;
+  margin: 25px;
+}
+
+.index-contents{
+  font-size: 13px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+}
+span{
+  font-size: 18px;
+}
+
+/*NEW-page*/
+.new-title{
+  text-align: center;
+  margin: 30px 0 15px 0;
+  font-size: 2.5rem;
+}
+.red{
+  color: red;
+}
+.blue{
+  color: blue;
+  margin-top: 10px;
+}
+.new-contents{
+  text-align: center;
+  margin-left: 35%;
+  width: 30%;
+}
+.btn{
+  margin: 50px;
+  padding: 10px 20px;
+}
+.new-books{
+  margin-left: 10%;
+}
+.new-books-title{
+  font-size: 2rem;
+}
+
+/*編集*/
+.edit{
+  margin-left: 10%;
+  margin-top: 30px;
+}
+.edit-title{
+  font-size:2rem;
+}
+
+/*詳細*/
+.show{
+  margin-left: 10%;
+  margin-top: 30px;
+}
+.link{
+  margin-top: 30px;
+  font-size: 1.25rem;
+}
+.left{
+  margin-right: 20px;
+}
+.blog-heading{
+  margin-bottom: 20px;
+}
+#show-span{
+  margin-top: 10px;
+}

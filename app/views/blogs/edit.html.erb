@@ -1,0 +1,13 @@
+<div class="edit">
+  <h1 class="edit-title">Edit books</h1>
+  <!-- form_with部分 -->
+  <%= form_with model:@blog, local: true do |f| %>
+    <p class="red">Title</p>
+    <%= f.text_field :title %>
+
+    <p class="blue">Body</p>
+    <%= f.text_area :body, :size => "40x10", class: "new-body"  %>
+
+    <%= f.submit 'Save', class: "btn" %>
+  <% end %>
+</div>
